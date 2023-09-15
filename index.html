@@ -14,15 +14,15 @@
 
   <div class="hero">
     <nav class="hero-navbar">
-      <div class="hero-navbar-item bg-img">
+      <div class="hero-navbar-item">
         <img src="./Images/Cedarstone_Logo_compressed-2-removebg-preview.png" alt="CedarStone logo" loading="lazy"
           width="110%">
       </div>
-      <div>Home</div>
-      <div>About Us</div>
-      <div>Features</div>
+      <div><a href="./index.html">Home</a></div>
+      <div><a href="./about.html">About Us</a></div>
+      <div><a href="./features.html">Features</a></div>
       <div>Blog</div>
-      <div><button class="yellow-button">Get in Touch</button></div>
+      <div><button class="yellow-button"><a href="./contact.html" style="color: white;">Get in Touch</a></button></div>
     </nav>
     <header class="hero-header">Unlocking Logistics Excellence</header>
     <p class="hero-text">At Cedarstone, we bring innovation and efficiency to logistics
@@ -42,12 +42,59 @@
     </p>
   </section>
 
+  <div onclick="goLeft()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chevron-left"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+    </svg>
+  </div>
+  <div onclick="goRight()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chevron-right"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+  </div>
+  <button class="carousel-button">Explore</button>
   <Section class="carousel-container">
-    <div class="carousel-container-item"></div>
-    <div class="carousel-container-item"></div>
-    <div class="carousel-container-item"></div>
-    <div class="carousel-container-item"></div>
-    <div class="carousel-container-item"></div>
+    <div class="carousel-container-inner">
+      <div class="carousel-container-item">
+        <img src="./Images/pic1.jpg" alt="" class="carousel-image image-right">
+        <div class="carousel-text">
+          <header>Process Optimization</header>
+          <p>Streamlining logistics processes for enhanced efficiency</p>
+        </div>
+      </div>
+      <div class="carousel-container-item">
+        <img src="./Images/pic2.jpg" alt="" class="carousel-image image-left">
+        <div class="carousel-text">
+          <header>Technology Integration</header>
+          <p>Cutting-edge solutions for optimized logistics operations</p>
+        </div>
+      </div>
+      <div class="carousel-container-item">
+        <img src="./Images/pic5.jpg" alt="" class="carousel-image image-right">
+        <div class="carousel-text">
+          <header>Training & Skill Development</header>
+          <p>Customized programs to empower your workforce.</p>
+        </div>
+      </div>
+      <div class="carousel-container-item">
+        <img src="./Images/pic2.jpg" alt="" class="carousel-image image-left">
+        <div class="carousel-text">
+          <header>Warehouse Design & Layout</header>
+          <p>Maximize Space and improve operational flow</p>
+        </div>
+      </div>
+      <div class="carousel-container-item">
+        <img src="./Images/pic1.jpg" alt="" class="carousel-image image-right">
+        <div class="carousel-text">
+          <header>Sustainabilty Initiatives</header>
+          <p>Green solutions for a reduced environment impact</p>
+        </div>
+      </div>
+    </div>
   </Section>
 
   <section>
@@ -83,7 +130,7 @@
 
   <section class="cta">
     <div class="cta-container">
-      <header class="cta-header">Step into a new era of logistics success with CedarStone:</header>
+      <header class="cta-header">Step into a new era of logistics success with Cedarstone:</header>
       <header class="cta-header">Where industry leaders converge to unlock unparalleled growth</header>
       <p class="cta-text">Discover why our Clients Recognize Us As The Catalyst For Transformative Logistic Guidance</p>
       <button class="yellow-button cta-button">Reach out today and experience the difference!</button>
@@ -133,11 +180,14 @@
       <p class="newsletter-container-header">Newsletter</p>
       <button class="cyan-button">name@email.com</button>
       <button class="yellow-button">Subscribe</button>
-      <p style="text-align: center;">&#169; 2023 Cedarstone Ltd. | Built by The Meraki Studio</p>
+      <p style="text-align: center;">&#169; 2023 Cedarstone Ltd. | Built by <span>
+          <a href="https://themerakistudio.co/" style="color: #486149;">The Meraki Studio</a></span>
+      </p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
