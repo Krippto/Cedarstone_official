@@ -117,9 +117,9 @@
     float: right;
 }
 
-/* .carousel-text{
+.carousel-text{
    padding: 2rem;
-} */
+}
 
 .carousel-button{
     margin-left: 50%;
@@ -127,12 +127,12 @@
 
 .carousel-text header{
     font-size: 3rem;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .carousel-text p{
     font-size: 1.5rem;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 
